@@ -11,13 +11,4 @@ class CarSpec extends Specification {
       car.isEmpty() == true
   }
 
-  void "should do a gas fill up"(){
-    given:'A car'
-      Car car = new Car()
-    when:'We do a gas fill up'        
-      car.fillUp()
-    then:'Car is full of gas'  
-      car.isFull() == true
-  }
-
 }
