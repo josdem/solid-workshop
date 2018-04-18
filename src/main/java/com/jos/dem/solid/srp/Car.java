@@ -20,6 +20,10 @@ public class Car {
     return fuel == MAX_FUEL;
   }
 
+  public boolean isEmpty(){
+    return fuel == 0;
+  }
+
   public void accelerate() {
     fuel--;
   }
