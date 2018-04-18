@@ -4,7 +4,7 @@ import static org.junit.Assert.assertEquals;
 import java.math.BigDecimal;
 import org.junit.Test;
 
-public class TestEmployee {
+public class EmployeeTest {
 	
 	@Test
 	public void shouldGetEngineerSalary() {
