@@ -4,6 +4,10 @@ public class Car {
   private static final int MAX_FUEL = 40;
   private int fuel;
 
+  public Car(){
+    this.fuel = MAX_FUEL;
+  }
+
   public void fillUp() {
     this.fuel = MAX_FUEL;
   }
@@ -13,7 +17,7 @@ public class Car {
   }
 
   public boolean isFull(){
-    return false;
+    return fuel == MAX_FUEL;
   }
 
   public void accelerate() {
