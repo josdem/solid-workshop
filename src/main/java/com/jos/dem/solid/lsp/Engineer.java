@@ -8,9 +8,4 @@ public class Engineer implements Employee {
 		return monthlySalary;
   }
   
-  @Override
-  public String toString(){
-    return this.getClass().getSimpleName() + " earns " + getPaymentAmount();
-  }
-
 }

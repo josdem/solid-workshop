@@ -9,10 +9,5 @@ public class Manager implements Employee {
 	public BigDecimal getPaymentAmount() {
 		return monthlySalary.add(bonus);
   }
-  
-  @Override
-  public String toString(){
-    return this.getClass().getName() + " earns " + getPaymentAmount();
-  }
 
 }

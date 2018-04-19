@@ -9,10 +9,5 @@ public class Salesman implements Employee {
 	public BigDecimal getPaymentAmount() {
 		return monthlySalary.add(commission);
   }
-  
-  @Override
-  public String toString(){
-    return this.getClass().getName() + " earns " + getPaymentAmount();
-  }
 
 }
