@@ -6,7 +6,7 @@ public class PersonService {
 
   private PersonRepository personRepository;
 
-  public PersonService(PersonRepository personRepository){
+  public void setPersonRepository(PersonRepository personRepository){
     this.personRepository = personRepository;
   }
 
