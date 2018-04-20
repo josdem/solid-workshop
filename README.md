@@ -1,22 +1,16 @@
-Java Application project template
+S.O.L.I.D Principles
 ------------------------------------
 
-You have just created a basic Java application. There is a standard project
-structure for source code and tests.
+In object-oriented programming SOLID is a term developed by [Robert C. Martin](https://en.wikipedia.org/wiki/Robert_C._Martin) and the intention is to describe five important design principles to create good software, those concepts are:
 
-In this project you get:
+* [S — Single Responsibility Principle](#srp)
+* [O — Open closed Principle](#ocp)
+* [L — Liskov Substitution Principle](#lsp)
+* [I — Interface Segregation Principle](#isp)
+* [D — Dependency Inversion Principle](#dip)
 
-* A Gradle build file
-* A standard project structure:
+To run the project:
 
-    <proj>
-      |
-      +- src
-          |
-          +- main
-          |     |
-          |     +- java
-          |
-          +- test
-          |   |
-          |   +- java
+```bash
+gradle test
+```
