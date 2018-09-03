@@ -10,7 +10,7 @@ import org.junit.Test;
 public class EmployeeTest {
 	
 	@Test
-	public void shouldGetTotalSalary() {
+  public void shouldGetTotalSalary() {
     BigDecimal expectedTotal = new BigDecimal(330);
     Employee engineer = new Engineer();
     Employee manager = new Manager();
