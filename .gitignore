@@ -3,5 +3,8 @@
 .project
 .settings/
 .vscode/
+target/
 bin/
 build/
+**swp
+**swo
