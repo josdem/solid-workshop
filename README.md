@@ -9,8 +9,14 @@ In object-oriented programming SOLID is a term developed by [Robert C. Martin](h
 * [I — Interface Segregation Principle](http://josdem.io/techtalk/best_practices/solid_principles/#isp): Clients should not be forced to implement unnecessary methods which they will not use.
 * [D — Dependency Inversion Principle](http://josdem.io/techtalk/best_practices/solid_principles/#dip): Entities must depend on abstractions not on concretions.
 
-**To run the project:**
+**To run the project using Gradle:**
 
 ```bash
 gradle test
-``` 
+```
+
+**To run the project using Maven:**
+
+```bash
+mvn test
+```
