@@ -5,3 +5,6 @@
 .vscode/
 bin/
 build/
+target/
+**swp
+**swo
