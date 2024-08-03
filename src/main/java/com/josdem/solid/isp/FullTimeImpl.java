@@ -1,14 +1,15 @@
 package com.josdem.solid.isp;
 
 import java.math.BigDecimal;
+import java.math.RoundingMode;
 
-public class PartnerImpl implements Partner {
+public class FullTimeImpl implements FullTime {
 
   private static final BigDecimal BASE_SALARY = new BigDecimal(100);
   private static final BigDecimal PROFIT_PERCENTAGE = new BigDecimal(20);
-  private Integer hours;
+  private final int hours;
 
-  public PartnerImpl(Integer hours){
+  public FullTimeImpl(Integer hours){
     this.hours = hours;
   }
 
@@ -19,7 +20,7 @@ public class PartnerImpl implements Partner {
 
 	@Override
 	public BigDecimal getProfits() {
-		return getBaseAmount().multiply(PROFIT_PERCENTAGE).divide(new BigDecimal(100));
+		return getBaseAmount().multiply(PROFIT_PERCENTAGE).divide(new BigDecimal(100), RoundingMode.HALF_UP);
   }
 
 }

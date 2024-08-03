@@ -6,9 +6,9 @@ public  class ContractorImpl implements Contractor {
 
   private static final BigDecimal BASE_SALARY = new BigDecimal(80);
   private static final BigDecimal BASE_BONUS = new BigDecimal(10);
-  private Integer hours;
+  private final int hours;
 
-  public ContractorImpl(Integer hours){
+  public ContractorImpl(int hours){
     this.hours = hours;
   }
 

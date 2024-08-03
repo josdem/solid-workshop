@@ -15,7 +15,7 @@ public class EmployeeTest {
   @Test
   public void shouldGetTotalPartnersAmount(){
     BigDecimal expectedTotal = new BigDecimal(5400);    
-    List<Partner> partners = Arrays.asList(new PartnerImpl(10), new PartnerImpl(15), new PartnerImpl(20));
+    List<FullTime> partners = Arrays.asList(new FullTimeImpl(10), new FullTimeImpl(15), new FullTimeImpl(20));
 
     assertEquals(expectedTotal, partners.stream()
       .map(it -> it.getBaseAmount().add(it.getProfits()))
