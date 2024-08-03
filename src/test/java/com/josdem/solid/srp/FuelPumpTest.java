@@ -7,7 +7,6 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 
 class FuelPumpTest {
     private final FuelPump fuelPump = new FuelPump();
-
     @Test
     @DisplayName("fulling a car")
     void shouldFuelCar() {

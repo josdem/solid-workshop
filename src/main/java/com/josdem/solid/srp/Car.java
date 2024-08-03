@@ -2,7 +2,7 @@ package com.josdem.solid.srp;
 
 public class Car {
   private static final int MAX_FUEL = 40;
-  private int fuel;  
+  private int fuel = 0;
 
   public void addGas() {
     this.fuel++;

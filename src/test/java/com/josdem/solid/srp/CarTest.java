@@ -6,7 +6,6 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 class CarTest {
-
     @Test
     @DisplayName("validating a new car")
     void shouldValidateCar(){
