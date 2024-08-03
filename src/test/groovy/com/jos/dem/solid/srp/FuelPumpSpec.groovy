@@ -1,5 +1,7 @@
 package com.jos.dem.solid.srp
 
+import com.josdem.solid.srp.Car
+import com.josdem.solid.srp.FuelPump
 import spock.lang.Specification
 
 class FuelPumpSpec extends Specification {
@@ -8,7 +10,7 @@ class FuelPumpSpec extends Specification {
 
   void "should fuel a car"(){
     given:'A car'
-      Car car = new Car()
+    Car car = new Car()
     when:'We do a gas fill up'        
       fuelPump.reFuel(car)
     then:'Car is full of gas'  
