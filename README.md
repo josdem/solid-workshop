@@ -12,11 +12,5 @@ In object-oriented programming SOLID is a term developed by [Robert C. Martin](h
 **To run the project using Gradle:**
 
 ```bash
-gradle test
-```
-
-**To run the project using Maven:**
-
-```bash
-mvn test
+./gradlew test
 ```

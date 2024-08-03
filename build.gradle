@@ -1,12 +1,21 @@
-apply plugin: "java"
-apply plugin: "groovy"
-apply plugin: "application"
+plugins {
+  id 'java'
+}
+
+def junitJupiterVersion = '5.10.3'
+
+group 'com.josdem.solid'
+version '1.0-SNAPSHOT'
 
 repositories {
   mavenCentral()
 }
 
 dependencies {
-  compile 'org.codehaus.groovy:groovy-all:2.4.14'
-  testCompile 'org.spockframework:spock-core:1.1-groovy-2.4'
+  testImplementation "org.junit.jupiter:junit-jupiter-api:$junitJupiterVersion"
+  testRuntimeOnly "org.junit.jupiter:junit-jupiter-engine:$junitJupiterVersion"
+}
+
+test {
+  useJUnitPlatform()
 }
